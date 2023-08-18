@@ -1,0 +1,287 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+}
+
+/* icon-bar */
+
+.iconbar {
+  width: 5%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  border-right: 1px solid lightgray;
+}
+
+/* all icons */
+
+.icons {
+  width: 45px;
+  height: 45px;
+  font-size: 27px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+/* instagram icon special */
+
+.insta-icon {
+  margin-bottom: 50px;
+}
+.insta-icon i {
+  font-size: 32px;
+}
+
+/* icons hover */
+
+.icons:hover {
+  background-color: rgb(220, 217, 217, 0.5);
+}
+.icons:hover i {
+  font-size: 30px;
+}
+
+/* profile picture special */
+
+.profile-pic img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.profile-pic {
+  display: flex;
+  justify-content: center;
+}
+
+/* main content area */
+
+.feeds {
+  width: 65%;
+  margin-left: 5%;
+  /* border: 1px solid red; */
+  /* background-color: orangered; */
+}
+
+/* story content */
+
+.story-container {
+  width: 90%;
+  margin: 30px auto;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 10px 0px;
+  /* border: 1px solid black; */
+  gap: 15px;
+  /* horizontal scrollbar */
+  white-space: nowrap;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.story {
+  width: 83px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.story-img {
+  width: 70px;
+  height: 70px;
+
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(to right, #f27121, #e94057, #8a2387) border-box;
+  border-radius: 50%;
+  padding: 1px;
+  border: 3px solid transparent;
+
+  /* border-width: 4px;
+  border-style: solid;
+  border-image: linear-gradient(to right, #F27121, #E94057, #8A2387) 1; */
+}
+
+.story-username {
+  width: 80px;
+  font-size: 0.9em;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* post content */
+
+.content {
+  width: 65%;
+  margin: 60px auto;
+}
+
+.post {
+  width: 100%;
+  margin-bottom: 5%;
+  border-bottom: 1px solid lightgray;
+  border-radius: 8px;
+  padding: 10px;
+}
+.post-img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.user-profile {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.profile-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+}
+
+.post-heading {
+  display: flex;
+  flex-direction: column;
+}
+
+.op{
+  font-size: 15px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.post-name-time {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+}
+
+.audio {
+  margin: 0;
+  font-size: 12px;
+}
+
+.username {
+  margin: 0;
+  display: flex;
+}
+
+.time {
+  margin: 0;
+  color: gray;
+  font-weight: normal;
+}
+
+.dot {
+  margin-bottom: 8px;
+}
+
+.dot i {
+  font-size: 5px;
+  color: gray;
+}
+
+.post-icons {
+  display: flex;
+  font-size: 28px;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.post-counter p {
+  margin: 0px;
+}
+.like-com-share {
+  display: flex;
+  gap: 20px;
+  cursor: pointer;
+}
+.save{
+  cursor: pointer;
+}
+
+
+.discription {
+  margin-bottom: 10px;
+}
+
+/* sidebar area */
+
+.sidebar {
+  width: 30%;
+  /* background-color: blueviolet; */
+  padding: 50px 30px;
+}
+
+.name{
+  font-size: 1em;
+  color: gray;
+  margin: 0;
+}
+
+.suggested-lbl{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px auto;
+}
+
+.insta-logo{
+  width: 90%;
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo{
+  height: 40px;
+}
+
+.mode{
+  font-size: 26px;
+  cursor: pointer;
+}
+
+.text-light{
+  color: white;
+}
+
+
+.text-dark{
+  color: black;
+}
